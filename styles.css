@@ -31,7 +31,7 @@
 	cursor: pointer;
 }
 body {
-	background-image: url("Img/Fire.jpg");
+	background-image: url("/Img/FastQualifiedIchneumonfly-max-1mb.gif");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -44,6 +44,17 @@ p {
     color: red;
     text-align: center;
 }
+table {
+    border-collapse: collapse;
+    width: 100%;
+    color: blue;
+    background-image: url("/Img/walrusdance.gif");
+}
+table, td, th {
+    
+    border: 1px solid black;
+
+}
 
 img {
     display: block;
@@ -52,3 +63,14 @@ img {
     border-style: solid;
     border-color: black;
 }
+.bottomleft {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    font-size: 18px;
+}
+table { 
+	text color: !important blue;
+	
+	
+	
