@@ -71,6 +71,11 @@ img {
 }
 table { 
 	text color: !important blue;
-	
-	
+}
+p {
+	background-color: blue;
+	padding: 100px 0;
+	position: fixed;
+	word-spacing: 0.02em; 
+}
 	
