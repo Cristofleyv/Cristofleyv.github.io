@@ -6,6 +6,10 @@ h1 {
 }
 img {
 }
-h2 {
-    background:url(cris.jpg;
+
+
+footer {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
 }
