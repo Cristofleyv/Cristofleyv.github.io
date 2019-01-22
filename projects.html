@@ -30,6 +30,105 @@
 <a href="thunkableapp.html">Thunkable Project</a>
 
 
+<body>
+  <p id="nani">KO</p>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <p id="name">my name will go here</p>
+  
+  
+  <button type="button" onclick=clickme()>add or multiplyy???</button>
+   <p id="ptext">add</p>
+  
+  
+  <button type="button" onclick=clickme()>Click me</button>
+    <p id="ptext">this is on</p>
+  
+  <button type="button" onClick=clickme()>clickme</button>
+    <p id="ptext">This is about to change</p>
+
+<img width=200 height=200  id="graphic" src="/images/fortnite.jpg"/></img>
+
+<button type="button" id="showImg" onclick=picChange()>SHOW</button>
+<button type="button" id="hideImg" onclick=picChange()>HIDE</button>
+
+<script>
+ function picChange(){
+   if (state == "wsoe"){
+   pic.src = "/images/wsoe.jpg"
+   button.innerHTML = "fortnite"
+   state = "200iq"
+   }
+   else if (state == "200iq")
+   pic.src = "/images/fortnite.jpg"
+   button.innerHTML = "fortnite"
+   state = "wsoe"
+ }
+ 
+ 
+ 
+  function clickme(){
+    var ptext = document.getElementById('ptext')
+    ptext.innerHTML = 'monkey'
+    ptext.style.fontSize = "35px"
+    ptext.style.color = "blue"
+  }
+ 
+  function adder(){
+  
+    var x = 3
+    var y = 4
+    var z = x + y 
+    var ptext = document.getElementById('ptext')
+   ptext.innerHTML = z
+   alert("lol")
+    }
+  
+ var word = "Ice Cream"
+document.getElementById('name').innerHTML = word
+
+
+var w = 7
+if (w > 6){
+  document.getElementById("name").innerHTML = "hello" 
+}
+
+var w = 4
+
+var state = "fortnite"
+var button = document.getElementById("picButton")
+var pic = document.getElementById("graphic")
+
+
+
+
+
+adder
+
+var button2 = document.createElement("button")
+var buttonText = document.createTextNode("adder")
+button2.appendChild(buttonText)
+button2.setAttribute("onclick", 'picChange()')
+button2.setAttribute("id", "bubblegum")
+document.body.appendChild(button2)
+
+
+function hideImg(){
+  pic.style.display = "none"
+}
+function showImg(){
+  pic.style.display = ""
+}
+</script>
+
+</body>
 
 
 

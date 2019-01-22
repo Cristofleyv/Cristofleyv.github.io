@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+ 
+
+<meta charset="utf-8">
+    <title>Cristofher Leyva</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css" type="text/css" />
+
+ <style>
+    body{
+     overflow: hidden;
+ }
+    #container{
+        position:absolute;
+        top: 12%;
+        bottom: 0px;
+        left: 0px; 
+        right: 0px;
+        background:black;
+        
+    }
+    #leftpane{
+        width: 56%;
+        height: 100%;
+   
+        float: left;
+    }
+    #rightpane{
+        width: 44%;
+        height: 100%;
+        float: left;
+    }
+    #storytext{
+       width: 100%;
+       height: 90%;
+       float: left;
+    }
+    #buttons{
+       position: absolute;
+       bottom: 50px;
+       left: 56%;
+       right: 0px;
+       height: 50px;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+    }
+    
+    .btn{
+    margin: 40px;
+}
+
+    #graphic{
+    max-height: 100%;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+}
+    #texter{
+    color: white;
+    font-size: 20px;
+}
+</style>
+</head>
+<div>
+<ul>
+<ul class="nav nav-pills justify-content-end">
+  <li class="nav-item">
+    <a class="nav-link active" href="index.html">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="aboutme.html">About Me</a>
+  </li>
+    <a class="nav-link" href="resume.html">Resume</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="projects.html">Projects</a>
+  <li class="nav-item">
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="contact.html">Contact Me</a>
+  </li>
+    <li class="nav-item">
+    <a class="nav-link" href="fiction.html"><fiction class="html"></fiction></a>
+  </li>
+</ul>
+</div>  
+
+     <div id="container">
+      <div id="leftpane">
+        <img id="graphic"/>
+</div>
+    <div id="rightpane">
+        <div id="storytext">
+            <p id="texter">whats up</p>
+        </div>
+        <div id="buttons">
+            <button id="button1" onclick="buttonclick(1)" type="button" class="btn btn-warning">Warning</button>
+            <button id="button2" onclick="buttonclick(2)" type="button" class="btn btn-warning">Warning</button>
+            <button id="button3" onclick="buttonclick(3)" type="button" class="btn btn-warning">Warning</button>
+            <button id="button4" onclick="buttonclick(4)" type="button" class="btn btn-warning">Warning</button>
+        </div>
+    
+</div>
+    
+    
+</div>
+<script>
+    var graphic = document.getElementById("graphic")
+    var texter = document.getElementById("texter")
+    var button1 = document.getElementById("button1")
+    var button2 = document.getElementById("button2")
+    var button3 = document.getElementById("button3")
+    var button4 = document.getElementById("button4")
+    var state = "intro"
+    
+    function intro(){
+    texter.innerHTML = " In a cruise ship"
+    button1.innerHTML = "yes"
+    button1.style.display = "block"
+    button2.innerHTML = "no"
+    button2.style.display = "block"
+    button3.style.display = "none"
+    button4.style.display = "none"
+    graphic.src = "/images/cruisshiedd.jpg"
+    }
+    function park(){
+    texter.innerHTML = " park is derp"
+    button1.innerHTML = "swing"
+    button1.style.display = "block"
+    button2.innerHTML = "slide"
+    button2.style.display = "block"
+    button3.innerHTML = "spin"
+    button3.style.display = "block"
+    button4.innerHTML = "slide"
+    button4.style.display = "block"
+    graphic.src = "/images/parl.jpg"
+    }
+   
+    function alley(){
+    texter.innerHTML = " park is derp"
+    button1.innerHTML = "punch"
+    button1.style.display = "block"
+    button2.innerHTML = "derp"
+    button2.style.display = "block"
+    button3.innerHTML = "run"
+    button3.style.display = "block"
+    button4.innerHTML = "cry"
+    button4.style.display = "block"
+    graphic.src = "/images/alley.jpg"
+    }
+    function buttonclick(button){
+        if (state == "intro"){
+            if (button == 1){
+                state = "park"
+                park()
+            }
+            else if (button == 2)
+            state = "alley"
+            alley()
+        }
+        else if(state == "park"){
+            //button checks
+        }
+        else if (state == "alley"){
+            //button checks
+        }
+    }
+    
+    
+    
+    
+    intro()
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
