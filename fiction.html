@@ -84,7 +84,7 @@
     <a class="nav-link" href="contact.html">Contact Me</a>
   </li>
     <li class="nav-item">
-    <a class="nav-link" href="fiction.html"><fiction class="html"></fiction></a>
+    <a class="nav-link" href="fiction.html"><fiction class="html"></fiction>fiction</a>
   </li>
 </ul>
 </div>  
@@ -111,11 +111,36 @@
 <script>
     var graphic = document.getElementById("graphic")
     var texter = document.getElementById("texter")
+        texter.style.fontSize = 36
     var button1 = document.getElementById("button1")
+        button1.style.fontSize = 24
     var button2 = document.getElementById("button2")
+        button2.style.fontSize = 24
     var button3 = document.getElementById("button3")
+        button3.style.fontSize = 24
     var button4 = document.getElementById("button4")
+        button4.style.fontSize = 24
     var state = "intro"
+    
+        function buttonclick(button){
+        if (state == "intro"){
+            if (button == 2){
+                state = "gamers"
+                gamers()
+            }
+            else if (button == 1){
+            state = "furries"
+            furries()
+            }
+        }
+        else if(state == "gamers"){
+            //button checks
+        }
+        else if (state == "furries"){
+            //button checks
+        }
+    }
+
     
     function intro(){
     texter.innerHTML = " It was a chilly summer night in Florida, Mr. Landfries and his partner Sans go abord a cruise ship to investigate the sightings of the Furries. The Furries, already abord the ship, are on vacation from their long season. Eblo Pascobar and Bernice were the spies for them."
@@ -127,21 +152,21 @@
     button4.style.display = "none"
     graphic.src = "/images/furryvgamer.jpg"
     }
-    function park(){
-    texter.innerHTML = " park is derp"
-    button1.innerHTML = "swing"
+    function furries(){
+    texter.innerHTML = "You are allied with the Furries, Eblo and Bernice will be helping you.You are going to be working with the furry gang which includes Eblo Pascobar and Bernice, the rest of the Furries have diceased or either died in the tsunami that hit about week ago. The Furries have recieved intel from the camers that the gamers have aboard the ship. Do you want to hide from the Gamers or attack the Gamers? Type 'hide' or 'attack'"
+    button1.innerHTML = "Hide"
     button1.style.display = "block"
-    button2.innerHTML = "slide"
+    button2.innerHTML = "Attack"
     button2.style.display = "block"
     button3.innerHTML = "spin"
-    button3.style.display = "block"
+    button3.style.display = "none"
     button4.innerHTML = "slide"
-    button4.style.display = "block"
-    graphic.src = "/images/parl.jpg"
+    button4.style.display = "none"
+    graphic.src = "/images/hideorattack.png"
     }
    
-    function alley(){
-    texter.innerHTML = " park is derp"
+    function gamers(){
+    texter.innerHTML = " You are allied with the Gamers, Mr. Landfries and Sans will be helping you. Mr. Landfries receives a message from Chief Chris P. Bacon about the enemy furries on board the ship. You can either go out and investigate the ship, 'yes', or play it safe, 'no'."
     button1.innerHTML = "punch"
     button1.style.display = "block"
     button2.innerHTML = "derp"
@@ -150,27 +175,12 @@
     button3.style.display = "block"
     button4.innerHTML = "cry"
     button4.style.display = "block"
-    graphic.src = "/images/derpo.gif"
-    }
-    function buttonclick(button){
-        if (state == "intro"){
-            if (button == 1){
-                state = "park"
-                park()
-            }
-            else if (button == 2)
-            state = "alley"
-            alley()
-        }
-        else if(state == "park"){
-            //button checks
-        }
-        else if (state == "alley"){
-            //button checks
-        }
+    graphic.src = "/images/gamer.jpg"
     }
     
     
+   
+
     
     
     intro()
